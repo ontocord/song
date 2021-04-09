@@ -619,7 +619,7 @@ class PositionwiseFeedForward(nn.Module):
 
         # Use Conv1D
         # position-wise
-        if do_out is None:
+        if d_out is None:
           d_out = d_in
           self.dont_add_residual = True
         else:
@@ -1102,4 +1102,3 @@ class FastSpeech2ForPretraining(FastSpeech2PreTrainedModel):
 
     def freeze_variance_adaptor(self):
       self.fastspeech2.freeze_variance_adaptor()
-    
