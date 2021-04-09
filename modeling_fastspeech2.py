@@ -1102,3 +1102,4 @@ class FastSpeech2ForPretraining(FastSpeech2PreTrainedModel):
 
     def freeze_variance_adaptor(self):
       self.fastspeech2.freeze_variance_adaptor()
+    
