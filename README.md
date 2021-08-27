@@ -21,7 +21,8 @@ The model can be used directly as follows:
 
 ```
 # load the model and tokenizer
-from fastspeech2_hf.modeling_fastspeech2 import FastSpeech2ForPretraining, FastSpeech2Tokenizer
+from fastspeech2_hf.modeling_fastspeech2 import FastSpeech2ForPretraining
+from fastspeech2_hf.tokenization_fastspeech2 import FastSpeech2Tokenizer
 model = FastSpeech2ForPretraining.from_pretrained("ontocord/fastspeech2-en")
 tokenizer = FastSpeech2Tokenizer.from_pretrained("ontocord/fastspeech2-en")
 
