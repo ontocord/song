@@ -13,9 +13,13 @@ Modified version of the text-to-speech system [FastSpeech 2: Fast and High-Quali
 ## Installation
 ```
 git clone https://github.com/ontocord/fastspeech2_hf
-pip install transformers torchaudio
+!pip install -r ./fastspeech2_hf/requirements.txt
 
 ```
+## Requirements
+transformers>=4.9.2
+torchaudio>=0.9.0
+
 ## Usage
 The model can be used directly as follows:
 
