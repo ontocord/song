@@ -1,0 +1,2 @@
+transformers>=4.9.2
+torchaudio>=0.9.0
