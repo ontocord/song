@@ -13,7 +13,7 @@ Modified version of the text-to-speech system [FastSpeech 2: Fast and High-Quali
 ## Installation
 ```
 git clone https://github.com/ontocord/fastspeech2_hf
-!pip install -r ./fastspeech2_hf/requirements.txt
+pip install -r ./fastspeech2_hf/requirements.txt
 
 ```
 ## Requirements
