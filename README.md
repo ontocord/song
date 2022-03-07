@@ -1,18 +1,10 @@
----
-language: en
-datasets:
-- LJSpeech
-- LibriTTS
-tags:
-- audio
-- TTS
-license: apache-2.0
----
-# ontocord/fastspeech2-en
-Modified version of the text-to-speech system [FastSpeech 2: Fast and High-Quality End-to-End Text to Speech] (https://arxiv.org/abs/2006.04558v1).
+
+# Sông
+Sông is the Vietnamese word for river. This is a library for experimenting with audio language tools, including text-to-speech. It's basis is a modified version of the text-to-speech system [FastSpeech 2: Fast and High-Quality End-to-End Text to Speech] (https://arxiv.org/abs/2006.04558v1).
+
 ## Installation
 ```
-git clone https://github.com/ontocord/fastspeech2_hf
+git clone https://github.com/ontocord/song
 pip install -r ./fastspeech2_hf/requirements.txt
 
 ```
@@ -25,8 +17,8 @@ The model can be used directly as follows:
 
 ```
 # load the model and tokenizer
-from fastspeech2_hf.modeling_fastspeech2 import FastSpeech2ForPretraining
-from fastspeech2_hf.tokenization_fastspeech2 import FastSpeech2Tokenizer
+from song.modeling_fastspeech2 import FastSpeech2ForPretraining
+from song.tokenization_fastspeech2 import FastSpeech2Tokenizer
 model = FastSpeech2ForPretraining.from_pretrained("ontocord/fastspeech2-en")
 tokenizer = FastSpeech2Tokenizer.from_pretrained("ontocord/fastspeech2-en")
 
@@ -78,9 +70,6 @@ for line, phone, w in zip(sentences, tokenizer.batch_decode(batch['input_ids']),
 
 
 ```
-
-##Github Code Repo 
-Current code for this model can be found [here](https://github.com/ontocord/fastspeech2_hf)
 
 This is a work in progress (WIP) port of the model and code from  
 [this repo] (https://github.com/ming024/FastSpeech2).
